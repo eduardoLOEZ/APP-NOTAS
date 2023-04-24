@@ -1,0 +1,124 @@
+:root {
+  --background-color: #09b37a;
+  --bs-primary-rgb: #12296c;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--bs-primary-rgb);
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-image: url(../img/noise-bg.png);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Unbounded', cursive;
+  font-weight: 800;
+}
+
+.container-fluid-custom {
+  max-width: 1600px;
+}
+
+/* Button */
+.btn {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  border-radius: 2rem;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary-rgb);
+  --bs-btn-border-color: var(--bs-primary-rgb);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0043a8;
+  --bs-btn-hover-border-color: #0043a8;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-primary-rgb);
+  --bs-btn-active-border-color: var(--bs-primary-rgb);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary-rgb);
+  --bs-btn-disabled-border-color: var(--bs-primary-rgb);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary-rgb);
+  --bs-btn-border-color: var(--bs-primary-rgb);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0043a8;
+  --bs-btn-hover-border-color: #0043a8;
+  --bs-btn-focus-shadow-rgb: 13,110,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-primary-rgb);
+  --bs-btn-active-border-color: var(--bs-primary-rgb);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--bs-primary-rgb);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-primary-rgb);
+  --bs-gradient: none;
+}
+
+.pagination {
+  --bs-pagination-color: var(--bs-primary-rgb);
+  --bs-pagination-active-bg: var(--bs-primary-rgb);
+  --bs-pagination-active-border-color: var(--bs-primary-rgb);
+}
+
+.btn-outline-primary-google {
+  --bs-btn-color: #fff;
+  --bs-btn-bg-color: #fff; /* Cambia el color de fondo a blanco */
+  --bs-btn-border-color: #4285f4;
+  --bs-btn-hover-color: #4285f4;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #4285f4;
+  --bs-btn-focus-shadow: 0 0 0 0.25rem rgba(66, 133, 244, 0.5);
+  --bs-btn-active-color: #4285f4;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #4285f4;
+  --bs-gradient: none;
+  background-image: url("../img/google.svg");
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+  width: auto;
+  height: 46px;
+  /* Agrega otros estilos necesarios para el botón */
+  border-width: 2px;
+  border-radius: 15px; /* Cambia el valor de border-radius para hacer el borde más redondeado */
+  font-size: 22px;
+  font-weight:bold;
+}
+
+
+
+
+/* Home */
+@media (min-width: 1200px) {
+  .home {
+    background: 
+      url('../img/human-1.svg') left bottom no-repeat,
+      url('../img/human-2.svg') right bottom no-repeat,
+      url('../img/noise-bg.svg') left top repeat,
+      var(--background-color);
+    ;
+  }
+}
+
+.home-title::before {
+  content: url('../img/stars.svg');
+  position: absolute;
+  left: -50px;
+  top: -30px;
+}
+
+.home-title::after {
+  content: url('../img/stars.svg');
+  position: absolute;
+  right: -50px;
+  bottom: -30px;
+}
